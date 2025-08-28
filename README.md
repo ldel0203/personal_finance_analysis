@@ -14,46 +14,82 @@ L’objectif est de montrer mes compétences en **ETL (Python)**, **modélisatio
 ---
 
 ## ⚙️ Technologies utilisées
-- **Python** : pandas, yfinance, SQLAlchemy, etc.  
-- **MySQL** : stockage des données structurées.  
-- **Power BI** : visualisation interactive.  
+- **Python** : pandas, yfinance, SQLAlchemy, ofxparse  
+- **MySQL** : stockage des données structurées  
+- **Power BI** : visualisation interactive  
 
 ---
 
 ## 🗂️ Structure du dépôt
 ```bash
-├── dashboards/ # Rapports Power BI
-│ ├── dashboard.pbix # Fichier Power BI
-│ └── dashboards.pdf # Export des dashboards
+├── dashboards/          # Rapports Power BI
+│   ├── dashboard.pbix   # Fichier Power BI
+│   └── dashboards.pdf   # Export des dashboards
 │
-├── etl/ # ETL complet
-│ ├── data/ # Données brutes et en attente
-│ │ ├── archives/
-│ │ ├── error/
-│ │ └── to_process/
-│ ├── extract/ # Scripts d’extraction (CSV, OFX, Yahoo Finance, MySQL)
-│ ├── transform/ # Scripts de transformation
-│ ├── load/ # Scripts de chargement MySQL
-│ ├── pipelines/ # Pipelines ETL orchestrés
-│ ├── logs.log # Logs d’exécution
-│ └── main.py # Point d’entrée du pipeline global
+├── etl/                 # ETL complet
+│   ├── data/            # Données brutes et en attente
+│   │   ├── archives/
+│   │   ├── error/
+│   │   └── to_process/
+│   ├── extract/         # Scripts d’extraction (CSV, OFX, Yahoo Finance, MySQL)
+│   ├── transform/       # Scripts de transformation
+│   ├── load/            # Scripts de chargement MySQL
+│   ├── pipelines/       # Pipelines ETL orchestrés
+│   ├── logs.log         # Logs d’exécution
+│   └── main.py          # Point d’entrée du pipeline global
 │
 ├── sql/
-│ ├── schema.sql # Schéma de la base MySQL
-│ └── views.py # Vues SQL utiles pour Power BI
+│   ├── schema.sql       # Schéma de la base MySQL
+│   └── views.py         # Vues SQL utiles pour Power BI
 │
-└── README.md # Présentation du projet
+├── requirements.txt     # Dépendances Python
+└── README.md            # Présentation du projet
 ```
+
 ---
 
 ## 📥 Installation & utilisation
-1. Cloner le dépôt :  
-   ```bash
-   git clone https://github.com/username/financial-data-analysis.git
 
-2. Créer la base MySQL avec le script dans /sql/.
+### 🔧 Prérequis
+- Python 3.10+
+- MySQL (version 8+ recommandée)
+- Power BI Desktop (pour ouvrir le fichier .pbix)
 
-3. Lancer le script ETL :
-  python etl/main.py
+### 🔽 Installation
 
-4. Explorer les dashboards Power BI disponibles dans /dashboards/.
+1. Cloner le dépôt :
+
+```bash
+git clone https://github.com/username/financial-data-analysis.git
+cd financial-data-analysis
+```
+
+2. Installer les dépendances Python :
+```bash
+pip install -r requirements.txt
+```
+
+3. Créer la base MySQL avec le script :
+```bash
+mysql -u user -p < sql/schema.sql
+```
+
+4. Lancer le script ETL :
+```bash
+python etl/main.py
+```
+
+5. Explorer les dashboards Power BI disponibles dans /dashboards/.
+
+---
+
+## 📊 Exemple de dashboard
+
+
+(Exemple visuel d’un rapport Power BI basé sur des données fictives)
+
+---
+
+## 📄 Licence
+
+Projet publié sous licence MIT.
