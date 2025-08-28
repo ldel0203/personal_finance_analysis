@@ -21,7 +21,7 @@ Ce projet a pour but de montrer mes compétences en **ETL**, **bases de données
 ---
 
 ## 🗂️ Structure du dépôt
-├── etl/ # Scripts Python pour l’ETL
+|-- etl/ # Scripts Python pour l’ETL
 ├── sql/ # Script SQL pour créer la base et les tables
 ├── data/ # Exemple de données (fictives)
 ├── dashboards/ # Captures ou export des dashboards Power BI
