@@ -83,13 +83,6 @@ python etl/main.py
 
 ---
 
-## 📊 Exemple de dashboard
-
-
-(Exemple visuel d’un rapport Power BI basé sur des données fictives)
-
----
-
 ## 📄 Licence
 
 Projet publié sous licence MIT.
