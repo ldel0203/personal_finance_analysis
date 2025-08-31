@@ -51,7 +51,6 @@ Projet complet d’analyse de données financières personnelles. Ce projet a po
 ### 🔧 Prérequis
 - Python 3.10+
 - MySQL (version 8+ recommandée)
-- Power BI Desktop (pour ouvrir le fichier .pbix)
 
 ### 🔽 Installation
 
