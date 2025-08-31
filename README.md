@@ -1,6 +1,6 @@
 # 📊 Financial Data Analysis  
 
-Projet complet d’analyse de données financières personnelles.   
+Projet complet d’analyse de données financières personnelles. Ce projet a pour but de charger, stocker et analyser les données issues de différentes sources.
 
 ---
 
