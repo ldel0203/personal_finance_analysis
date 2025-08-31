@@ -1,7 +1,6 @@
 # 📊 Financial Data Analysis  
 
-Projet complet d’analyse de données financières personnelles.  
-L’objectif est de montrer mes compétences en **ETL (Python)**, **modélisation SQL** et **visualisation Power BI**.  
+Projet complet d’analyse de données financières personnelles.   
 
 ---
 
@@ -23,7 +22,6 @@ L’objectif est de montrer mes compétences en **ETL (Python)**, **modélisatio
 ## 🗂️ Structure du dépôt
 ```bash
 ├── dashboards/          # Rapports Power BI
-│   ├── dashboard.pbix   # Fichier Power BI
 │   └── dashboards.pdf   # Export des dashboards
 │
 ├── etl/                 # ETL complet
